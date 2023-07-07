@@ -42,8 +42,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
     },
     line_items: transformedItems,
     mode: "payment",
-    success_url: `http://localhost:3000/success`,
-    cancel_url: `http://localhost:3000/failed`,
+    success_url: `https://yasin-amazon-clone.vercel.app/success`,
+    cancel_url: `https://yasin-amazon-clone.vercel.app/failed`,
     metadata: {
       email,
       images: JSON.stringify(products.map((product) => product.image)),
